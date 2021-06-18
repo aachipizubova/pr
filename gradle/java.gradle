@@ -65,11 +65,13 @@ task sourceJar(type: Jar) {
 }
 artifacts { sourceJar }
 
-task javadocJar(type: Jar) {
-    classifier = 'javadoc'
-    from javadoc
-}
-artifacts { javadocJar }
+/**
+*task javadocJar(type: Jar) {
+*    classifier = 'javadoc'
+*    from javadoc
+*}
+*artifacts { javadocJar }
+*/
 
 task testJar(type: Jar) {
     classifier = 'tests'
